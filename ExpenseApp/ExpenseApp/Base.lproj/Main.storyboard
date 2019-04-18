@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="1340.5797101449277" y="-295.3125"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Expense View Controller-->
         <scene sceneID="XZQ-eH-9Qq">
             <objects>
-                <viewController id="uqa-CI-74r" sceneMemberID="viewController">
+                <viewController id="uqa-CI-74r" customClass="AddExpenseViewController" customModule="ExpenseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dVv-5h-sm6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,8 +124,19 @@
                         <viewLayoutGuide key="safeArea" id="Rh2-9M-Xbm"/>
                     </view>
                     <navigationItem key="navigationItem" id="iyB-Aj-yfC">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="H83-wj-2tj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="H83-wj-2tj">
+                            <connections>
+                                <action selector="handleSave:" destination="uqa-CI-74r" id="Pdy-MB-41q"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="nZH-gX-qip" id="ifa-Mk-rZe"/>
+                        <outlet property="dateTextField" destination="SKx-cT-9id" id="MSd-PO-j5i"/>
+                        <outlet property="descriptionLabel" destination="841-xL-yY2" id="a7e-uF-qe5"/>
+                        <outlet property="saveButton" destination="H83-wj-2tj" id="QHj-Zs-Bzy"/>
+                        <outlet property="titleTextField" destination="aC5-zH-Hab" id="NVx-Wu-1Q3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0a-2y-J0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
