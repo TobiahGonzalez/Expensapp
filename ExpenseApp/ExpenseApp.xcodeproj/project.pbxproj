@@ -77,12 +77,14 @@
 		0CC1C0932268C509002FAC08 /* ExpenseApp */ = {
 			isa = PBXGroup;
 			children = (
+				0CC1C0A02268C50A002FAC08 /* Info.plist */,
 				0CC1C0942268C509002FAC08 /* AppDelegate.swift */,
 				0CC1C0962268C509002FAC08 /* ViewController.swift */,
-				0CC1C0982268C509002FAC08 /* Main.storyboard */,
 				0CC1C09B2268C50A002FAC08 /* Assets.xcassets */,
 				0CC1C09D2268C50A002FAC08 /* LaunchScreen.storyboard */,
-				0CC1C0A02268C50A002FAC08 /* Info.plist */,
+				0CC1C0982268C509002FAC08 /* Main.storyboard */,
+				0CC1C0B42268CA97002FAC08 /* Models */,
+				0CC1C0B52268CAAE002FAC08 /* View Controlers */,
 			);
 			path = ExpenseApp;
 			sourceTree = "<group>";
@@ -94,6 +96,20 @@
 				0CC1C0AB2268C50A002FAC08 /* Info.plist */,
 			);
 			path = ExpenseAppTests;
+			sourceTree = "<group>";
+		};
+		0CC1C0B42268CA97002FAC08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CC1C0B52268CAAE002FAC08 /* View Controlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
